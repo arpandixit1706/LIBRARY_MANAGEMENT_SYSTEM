@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title> Registering Book </title>
+        <link rel="stylesheet" href="registration_styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            function makeSubmission() {
+      
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var pnumber = document.getElementById('pnumber').value;
+            var nodays = document.getElementById('nodays').value;
+            //var regDate = document.getElementById('regDate').value;
+            var bookname = document.getElementById('bookname').value;
+            var message = document.getElementById('message').value;
+            alert("data value accessed by variable!");
+          try{
+            $.ajax('http://localhost:3000/booking', {
+              type: 'POST',
+              data: {name:name,email:email,pnumber:pnumber,nodays:nodays,bookname:bookname,message:message},
+              success: function (data, status, xhr) {
+               console.log("Booked succesfully!!");
+              },
+              error: function (jqXhr, textStatus, errorMessage){
+                  alert(error);
+              }
+            });
+        } catch(e) {
+            alert("You messed something up!");
+        }
+            alert("ajax ended");
+            return 'ok'
+           };
+/*             <!-- alert(name);
+alert(email);
+alert(pnumber);
+alert(nodays);
+alert(regDate);
+alert(bookname);
+alert(message); -->  */
+         </script> 
+
+    </head>
+    <body>
+
+
+        <div class="hero">
+            <div class="box">
+                <div class="heading">Registering 
+                    <div class="line"> </div>
+                </div>
+                <div>
+                    <form onsubmit="return makeSubmission();">
+                        <div class="input-text">
+                            <label for="name" class="name">Name</label>
+                            <label for="email" class="email">E-mail</label> <br>
+                            <input type="text" class="input-name" id="name" placeholder="Full name" required>  
+                            <input type="text" class="input-email" id="email" placeholder="E-mail" required>  
+                        </div>
+                        <div class="input-text">
+                            <label for="pnumber" class="number">Phone number</label>
+                            <label for="nodays" class="days">Number of Days</label> <br>
+                            <input type="text" class="input-number" id="pnumber" placeholder="Phone number" required>  
+                            <select name="days" id="nodays" class="input-days" required>
+                                <option value="Number of days">Number of days</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select>  
+                        </div>
+                        <div class="input-text">
+                            <label for="regDate" class="date"> Select Date</label>
+                            <label for="bookname" class="bookname">Book Name</label> <br>
+                            <input type="date" class="input-date" id="regDate" required>
+                            <input type="text" class="input-bookname" id="bookname" placeholder="bookname" required>
+                            <!-- <input type="time" class="input-time" id="time" required> -->
+                        </div>
+                        <div>
+                            <label for="suggestion" class="suggestion"> Feedback?</label>
+                             <br>
+                            <input type="text" class="input-suggestion" id="message">
+                            <br>
+                            <button type="submit" class="submit-btn"> BOOK NOW</button>
+                            
+                        </div>
+                        
+                    </form>
+                
+                
+                </div>
+            
+            </div>
+        </div>
+        
+    </body>
+</html>
+

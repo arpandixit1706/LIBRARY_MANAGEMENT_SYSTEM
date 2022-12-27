@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.hero {
+    height: 96vh;
+    width: 98.572%;
+    scroll-margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+}
+
+.box {
+    width: 600px;
+    height: 500px;
+    margin-bottom: 30px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: relative;
+    background-color: #FF8C00;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.heading {
+    width: 200px;
+    margin-top: 4% ;
+    margin-left: 3%;
+    font-size: 30;
+    position: relative;
+}
+.line 
+{
+    content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100px;
+  margin-top: 50px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #FF8C00, #000);
+}
+
+.input-total {
+    margin-top: 10px;
+    position: relative;
+    margin-left: 10px;
+}
+
+
+
+.name {
+    margin-left: 10px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.email {
+    margin-left: 231px;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+ .bookname {
+  margin-left: 231px;
+  margin-top: 20px;
+  font-size: 20px;
+ }
+
+.input-name {
+  height: 40px;
+  width: 45%;
+  outline: none;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  border-bottom: 2.5px solid #ccc;
+  transform: #000;
+
+}
+
+.input-name:hover {
+    border-bottom: #000;
+}
+
+.input-email {
+    height: 40px;
+  width: 45%;
+  outline: none;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  border-bottom: 2.5px solid #ccc;
+  transform: #000;
+
+}
+
+.input-bookname {
+  height: 40px;
+  width: 45%;
+  outline: none;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  border-bottom: 2.5px solid #ccc;
+  transform: #000;
+}
+
+.number {
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+
+}
+
+.days {
+    margin-left: 153px;
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+
+.input-number {
+    height: 40px;
+  width: 45%;
+  outline: none;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  border-bottom: 2.5px solid #ccc;
+  transform: #000;
+
+}
+
+.input-days {
+  height: 40px;
+  width: 45%;
+  outline: none;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  border-bottom: 2.5px solid #ccc;
+  transform: #000;
+
+}
+
+.date {
+    margin-left: 10px;
+    margin-top: 25px;
+    font-size: 20px;
+
+}
+
+
+.input-date {
+  height: 40px;
+  width: 45%;
+  outline: none;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  border-bottom: 2.5px solid #ccc;
+  transform: #000;
+
+}
+
+
+
+.suggestion {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    
+
+}
+
+.input-suggestion {
+  height: 70px;
+  width: 94%;
+  outline: none;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  border-bottom: 2.5px solid #ccc;
+  transform: #000;
+
+}
+
+.submit-btn {
+    width: 70%;
+    padding: 10px 30px;
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    margin-left: 15%;
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 20px;
+    background: linear-gradient(135deg, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+
+}
+
+.submit-btn:hover {
+    background:linear-gradient(-135deg, #ff105f, #ffad06) ;
+}
+
+
